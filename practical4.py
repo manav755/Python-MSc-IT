@@ -27,7 +27,7 @@ for i in w:
     if len(i) < len(smallnum):
         smallnum = i
 
-print("Smallest Number in Paragraph : ",smallnum)
+print("Smallest Word in Paragraph : ",smallnum)
 
 for i in w:
     count = w.count(i)
