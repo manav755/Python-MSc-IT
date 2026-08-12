@@ -12,8 +12,7 @@ for i in range(1,3):
     sub3 = int(input("Enter 3rd Subject Marks : "))
     sub4 = int(input("Enter 4th Subject Marks : "))
     sub5 = int(input("Enter 5th Subject Marks : "))
-
-
+    
 total = sub1+sub2+sub3+sub4+sub5
     
 percent = total / 5
@@ -40,14 +39,7 @@ for i in student:
         rank = rank 
     else:
         rank = rank + 1
-
-
-
-
-    
-
-
-
+        
 student.append([S_name,R_number,sub1,sub2,sub3,sub4,sub5,percent,grade,rank])
 
 print(f"{"Name":<10}{"Roll-No":<10}{"Subject1":<10}{"Subject2":<10}{"Subject3":<10}{"Subject4":<10}{"Subject5":<10}{"Percentage":<12}{"Grade":<10}{"Rank":<10}")
