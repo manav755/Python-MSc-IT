@@ -2,17 +2,20 @@ def S_data():
     student = []
 
     N = int(input("Enter Number of Student You Want : "))
-    i = 0
+
     for i in range(N):
-        S_name = str(input("Enter Name of Student-"))
+        S_name = str(input("\nEnter Name of Student-"))
         R_number = int(input("Enter Roll Number :- "))
-        sub1 = int(input("Enter 1st Subject Marks : "))
-        sub2 = int(input("Enter 2nd Subject Marks : "))
-        sub3 = int(input("Enter 3rd Subject Marks : "))
-        sub4 = int(input("Enter 4th Subject Marks : "))
-        sub5 = int(input("Enter 5th Subject Marks : "))
         
-        total = sub1+sub2+sub3+sub4+sub5
+        marks = []
+
+        print("\nEnter subject marks ")
+        for j in range(5):
+            
+            mark=int(input("Enter marks of Subject "+str(j+1)+" : "))
+            marks.append(mark)
+ 
+        total = sum(marks)
         
         percent = total / 5
 
@@ -31,6 +34,6 @@ def S_data():
 
         rank = 0
 
-        student.append([S_name,R_number,sub1,sub2,sub3,sub4,sub5,percent,grade,rank])
+        student.append([S_name,R_number]+ marks +[total,percent,grade,rank])
 
     return student

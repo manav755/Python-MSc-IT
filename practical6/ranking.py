@@ -6,9 +6,9 @@ def S_rank(student):
     for i in range(len(student)):
 
         if i > 0 and student[i][7] == student[i-1][7]:
-            student[i][9] = student[i-1][9]
+            student[i][10] = student[i-1][10]
         else:
-            student[i][9] = rank
+            student[i][10] = rank
 
         rank = i + 1
     return student
